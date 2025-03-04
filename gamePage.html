@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>CALIN GEORGESCU: THE GAME</title>
+
+  <link rel="stylesheet" type="text/css" href="css/cg.css" media="screen"/>
+
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  <script src="js/cg.js"></script>
+    
+
+  <p id="instr"></p>
+  <button id="buton" onclick="removeButton(); game();">START</button>
+
+  <div id="game">
+    <canvas id="canvas" width="512" height="712" ></canvas>
+    <div id="scoreboard"></div>
+  </div>
+
+</body>
+
+</html>

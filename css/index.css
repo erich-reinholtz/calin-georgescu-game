@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+a:link {
+  color: #D8F3DC;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #D8F3DC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e61111;
+  text-decoration: none;
+}
+
+a:active {
+  color: #D8F3DC;
+  text-decoration: none;
+} 
+
+.block-left{
+  width:50%;
+  height:100vh;
+  background-color:#081C15;
+  float:left;
+}
+.block-right{
+  width:50%;
+  height:100vh;
+  background-color:#05668D;
+  float:left;
+}
+
+#evasion{
+    margin-top:50%;
+    margin-left:30%;
+    color:#D8F3DC;
+    font-size: 70px;
+    font-family: 'Just Another Hand', cursive;
+}
+
+h1{
+	width: max-content;
+    margin: auto;
+    margin-top: auto;
+	font-size: 20pt;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 1px black;
+}
+
+h2{
+	font-size: 16pt;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 1px black;
+}
+
+#beat{
+    margin-top:50%;
+    margin-left:30%;
+    color:#F0F3BD;
+    font-size: 70px;
+    font-family: shadows into light, cursive;
+}
+
+body{
+	background: black;
+    overflow: hidden;
+}
+
+.animation{
+	width: max-content;
+    margin: auto;
+    margin-top: 100px;
+	font-size: 100pt;
+    filter: brightness(1.1) drop-shadow(0 0 10px lime);   	
+}
+.animation:nth-of-type(1){animation: move1 ease-in-out 1s  infinite; }
+.animation:nth-of-type(2){animation: move2 ease-in-out 1s  infinite; }
+.animation:nth-of-type(3){animation: move3 ease-in-out 1s  infinite; }
+	
+@keyframes move1{
+	0%{transform: rotate(270deg) rotateX(180deg) translateY(-20px); }
+	50%{transform: rotate(270deg) rotateX(180deg) ; }
+	100%{transform: rotate(270deg) rotateX(180deg) translateY(-20px); }
+}
+
+@keyframes move2{
+	0%{transform: translateY(-180pt) translateX(10px); }
+	50%{transform: translateY(-180pt)  ; }
+	100%{transform: translateY(-180pt) translateX(10px); }
+}
+@keyframes move3{
+	0%{transform: rotate(90deg) translateX(-370pt) translateY(15px); }
+	50%{transform: rotate(90deg) translateX(-370pt); }
+	100%{transform: rotate(90deg) translateX(-370pt) translateY(15px); }
+}
+
+#container{
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    margin: -100px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+}
